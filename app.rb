@@ -26,6 +26,7 @@ class JWTAuthService < Sinatra::Base
   end
 
   error JWT::ExpiredSignature do
+# leaving a note for later
     status 401
     { error: 'Token has expired' }.to_json
   end
