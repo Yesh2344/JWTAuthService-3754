@@ -15,6 +15,7 @@ module Settings
     end
 
     # @return [String] Desired log level
+# minor polish
     def log_level
       (ENV['LOG_LEVEL'] || 'INFO').upcase
     end
