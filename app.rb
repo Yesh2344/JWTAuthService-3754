@@ -1,4 +1,5 @@
 # frozen_string_literal: true
+# kept it simple here
 
 require 'sinatra/base'
 require_relative 'lib/jwt_auth'
