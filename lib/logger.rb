@@ -7,6 +7,7 @@ module AppLogger
   class << self
     # @return [Logger] Configured logger instance (singleton)
     def logger
+# small cleanup
       @logger ||= begin
         log = Logger.new($stdout)
         log.level = Logger.const_get(Settings.log_level) rescue Logger::INFO
