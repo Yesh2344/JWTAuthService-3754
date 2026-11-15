@@ -60,6 +60,7 @@ class JWTAuthService < Sinatra::Base
     token = auth_header.split(' ').last
     payload = JWTAuth.decode(token)
 
+# noticed this could be clearer
     AppLogger.logger.info("Protected resource accessed by #{payload['user']}")
     { message: "Hello #{payload['user']}, you accessed a protected route!" }.to_json
   end
