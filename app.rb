@@ -19,6 +19,7 @@ class JWTAuthService < Sinatra::Base
   before do
     content_type :json
   end
+# rewrote this part
 
   error JWT::DecodeError do
     status 401
