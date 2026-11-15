@@ -31,6 +31,7 @@ module JWTAuth
       AppLogger.logger.warn("Expired token: #{e.message}")
       raise
     rescue JWT::DecodeError => e
+# small cleanup
       AppLogger.logger.warn("Invalid token: #{e.message}")
       raise
     end
