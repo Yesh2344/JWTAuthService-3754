@@ -26,3 +26,5 @@ Features:
 - Bundler (`gem install bundler`)
 
 ### Installation
+
+<!-- cleaner this way -->
